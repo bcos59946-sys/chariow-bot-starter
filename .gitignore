@@ -1,0 +1,32 @@
+.env
+.venv/
+__pycache__/
+*.py[cod]
+*.log
+runtime/
+*.sqlite3
+.DS_Store
+.env.*
+!.env.example
+config.json
+*.bak
+*.bak_*
+*.backup
+*.sqlite
+*.db
+
+# Donnees locales et sauvegardes
+backups/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Configurations et secrets locaux
+config.local.json
+secrets.json
+secrets/
+*.pem
+*.key
+
+# Environnements et dependances locales
+node_modules/

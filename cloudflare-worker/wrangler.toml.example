@@ -1,0 +1,13 @@
+name = "chariow-pulse-receiver"
+main = "worker.js"
+compatibility_date = "2026-10-01"
+
+[[durable_objects.bindings]]
+name = "PULSE_STORE"
+class_name = "PulseStore"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["PulseStore"]
+
+# Set secret with: npx wrangler secret put CHARIOW_PULSE_SECRET
